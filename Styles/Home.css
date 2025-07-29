@@ -1,0 +1,1075 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Erica+One&family=Jersey+15&family=Julius+Sans+One&family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Ranchers&display=swap");
+html, body {
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5% 2.4%;
+  z-index: 999;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: white;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-family: "League Gothic", sans-serif;
+}
+
+.desktop {
+  display: block;
+  font-family: "League Gothic", sans-serif;
+}
+.desktop ul {
+  display: flex;
+}
+.desktop ul > * + * {
+  margin-left: 3em;
+}
+.desktop .nav {
+  color: white;
+  font-size: 1.8rem;
+}
+.desktop .nav-1 {
+  color: #FAFF00;
+  font-size: 1.8rem;
+}
+
+.showcase img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about {
+  width: 100%;
+  color: #ff003c;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  margin: 0% 0%;
+}
+.about img {
+  width: 24%;
+  margin: -10% 0%;
+}
+
+.m-scroll {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 10vh;
+  margin: auto;
+  background-color: #ff003c;
+  transform: rotate(-2deg);
+  margin-top: -10%;
+  overflow: hidden;
+  z-index: 1;
+}
+.m-scroll__title {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 1s ease;
+}
+.m-scroll__title > div {
+  display: flex;
+  animation: scrollText 60s infinite linear;
+}
+.m-scroll__title h1 {
+  font-family: "Ranchers", serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: #FCC737;
+  text-shadow: 0.1vw 0.1vw 0px black;
+}
+
+/*div:hover {
+  animation-play-state: paused;
+}*/
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+.about-grid {
+  margin: 14% 0%;
+}
+.about-grid img {
+  width: 100%;
+}
+
+.projects {
+  margin-top: -8%;
+}
+.projects .sub {
+  display: flex;
+}
+.projects h1 {
+  color: #fff000;
+  font-family: "League Gothic", sans-serif;
+  font-size: 360px;
+  text-align: center;
+  text-shadow: -0.4vw 0.2vw 0vw black;
+  margin: 2% 0%;
+}
+.projects .p1-flex {
+  display: flex;
+}
+.projects .p1-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p1-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .p1-flex .left-flex img {
+  width: 100%;
+}
+.projects .p1-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p1-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+}
+.projects .p1-flex .right-flex img {
+  width: 100%;
+}
+.projects .p2-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .p2-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p2-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .p2-flex .left-flex img {
+  width: 100%;
+}
+.projects .p2-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p2-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+}
+.projects .p2-flex .right-flex img {
+  width: 100%;
+}
+.projects .p-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .p-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .p-flex .left-flex img {
+  width: 100%;
+}
+.projects .p-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .p-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+  text-align: right;
+}
+.projects .p-flex .right-flex img {
+  width: 100%;
+}
+.projects .pr-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .pr-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pr-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pr-flex .left-flex img {
+  width: 100%;
+}
+.projects .pr-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pr-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pr-flex .right-flex img {
+  width: 100%;
+}
+.projects .pro-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .pro-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pro-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pro-flex .left-flex img {
+  width: 100%;
+}
+.projects .pro-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .pro-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .pro-flex .right-flex img {
+  width: 100%;
+}
+.projects .proj-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .proj-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proj-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proj-flex .left-flex img {
+  width: 100%;
+}
+.projects .proj-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proj-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proj-flex .right-flex img {
+  width: 100%;
+}
+.projects .proje-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .proje-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proje-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proje-flex .left-flex img {
+  width: 100%;
+}
+.projects .proje-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .proje-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .proje-flex .right-flex img {
+  width: 100%;
+}
+.projects .projec-flex {
+  display: flex;
+  margin: 4% 0%;
+}
+.projects .projec-flex .left-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .projec-flex .left-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .projec-flex .left-flex img {
+  width: 100%;
+}
+.projects .projec-flex .right-flex {
+  flex-basis: 50%;
+  margin: 0% 2%;
+}
+.projects .projec-flex .right-flex p {
+  font-family: "Source Code Pro", monospace;
+  text-transform: uppercase;
+  color: white;
+}
+.projects .projec-flex .right-flex img {
+  width: 100%;
+}
+
+.m-scroll-1 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: auto;
+  overflow: hidden;
+  z-index: 1;
+}
+.m-scroll-1__titlee {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  transform: scale(2);
+  transition: all 10s ease;
+}
+.m-scroll-1__titlee > div {
+  display: flex;
+  animation: scrollText 300s infinite linear;
+}
+.m-scroll-1__titlee h1 {
+  font-family: "League Gothic", sans-serif;
+  letter-spacing: 1px;
+  font-size: 180px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: #ffffff;
+  text-shadow: -0.14vw 0.1vw 0vw #ff003c;
+}
+
+/*div:hover {
+  animation-play-state: paused;
+}*/
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-80%);
+  }
+}
+.posts {
+  display: flex;
+  margin: 0% 0%;
+}
+.posts a {
+  width: 100%;
+  margin: 0% 1%;
+}
+.posts a img {
+  width: 100%;
+}
+
+.con {
+  width: 100%;
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  text-align: center;
+  margin: 6% 0%;
+}
+.con img {
+  width: 24%;
+  margin: -10% 0%;
+}
+.con h2 {
+  font-size: 16px;
+}
+.con a {
+  font-family: "League Gothic", sans-serif;
+  font-size: 140px;
+  color: #FAFF00;
+}
+.con .social {
+  margin: 4% 0%;
+}
+.con .social a {
+  font-family: "Source Code Pro", monospace;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: white;
+  padding: 0% 2%;
+}
+
+@media (max-width: 1460px) {
+  .showcase img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about img {
+    width: 90%;
+    margin: -11% 0%;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 8vh;
+    margin-top: 46%;
+  }
+  .m-scroll h1 {
+    font-size: 1.9em;
+  }
+}
+@media (max-width: 1200px) {
+  .showcase img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .about img {
+    width: 90%;
+    margin: -11% 0%;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 8vh;
+    margin-top: 46%;
+  }
+  .m-scroll h1 {
+    font-size: 1.9em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 16vh;
+  }
+  .m-scroll-1 h1 {
+    font-size: 42px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  header .logo {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop {
+    display: block;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .showcase img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects h1 {
+    font-size: 220px;
+  }
+  .projects .p1-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p1-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .p2-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p2-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .proje-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .proje-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .projec-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .projec-flex .right-flex p {
+    font-size: 12px;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 8vh;
+    margin-top: 48%;
+  }
+  .m-scroll h1 {
+    font-size: 0.1em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 20vh;
+    margin-top: -4%;
+  }
+  .m-scroll-1 h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 800px) {
+  header .logo {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop {
+    display: block;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.4rem;
+  }
+  .showcase img {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects h1 {
+    font-size: 220px;
+  }
+  .projects .p1-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p1-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .p2-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p2-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .proje-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .proje-flex .right-flex p {
+    font-size: 12px;
+  }
+  .projects .projec-flex .left-flex p {
+    font-size: 12px;
+  }
+  .projects .projec-flex .right-flex p {
+    font-size: 12px;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 8vh;
+    margin-top: 48%;
+  }
+  .m-scroll h1 {
+    font-size: 1.2em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 20vh;
+    margin-top: -4%;
+  }
+  .m-scroll-1 h1 {
+    font-size: 64px;
+  }
+}
+@media (max-width: 600px) {
+  header .logo {
+    font-size: 1.2rem;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .desktop .nav-1 {
+    font-size: 1.2rem;
+  }
+  .showcase img {
+    height: 100%;
+    width: 100%;
+    margin-top: -18%;
+  }
+  .about img {
+    width: 90%;
+    margin: -11% 0%;
+  }
+  .projects h1 {
+    font-size: 120px;
+  }
+  .projects .p1-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p1-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .p2-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p2-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .proje-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .proje-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .projec-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .projec-flex .right-flex p {
+    font-size: 9px;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 5vh;
+    margin-top: 56%;
+  }
+  .m-scroll h1 {
+    font-size: 0.7em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 16vh;
+  }
+  .m-scroll-1 h1 {
+    font-size: 42px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 400px) {
+  header .logo {
+    font-size: 1.2rem;
+  }
+  .desktop {
+    display: block;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 2em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1.2rem;
+  }
+  .desktop .nav-1 {
+    font-size: 1.2rem;
+  }
+  .showcase img {
+    height: 100%;
+    width: 100%;
+    margin-top: -24%;
+  }
+  .about img {
+    width: 90%;
+    margin: -11% 0%;
+  }
+  .projects h1 {
+    font-size: 120px;
+  }
+  .projects .p1-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p1-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .p2-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p2-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .projec-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .projec-flex .right-flex p {
+    font-size: 9px;
+  }
+  .projects .proje-flex .left-flex p {
+    font-size: 9px;
+  }
+  .projects .proje-flex .right-flex p {
+    font-size: 9px;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 5vh;
+    margin-top: 56%;
+  }
+  .m-scroll h1 {
+    font-size: 0.7em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 16vh;
+  }
+  .m-scroll-1 h1 {
+    font-size: 42px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  header .logo {
+    font-size: 1rem;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop {
+    display: block;
+    font-family: "League Gothic", sans-serif;
+  }
+  .desktop ul {
+    display: flex;
+  }
+  .desktop ul > * + * {
+    margin-left: 1.4em;
+  }
+  .desktop .nav {
+    color: white;
+    font-size: 1rem;
+  }
+  .desktop .nav-1 {
+    font-size: 1rem;
+  }
+  .showcase img {
+    height: 100%;
+    width: 100%;
+    margin-top: -20%;
+  }
+  .about img {
+    width: 90%;
+    margin: -10% 0%;
+  }
+  .projects h1 {
+    font-size: 100px;
+  }
+  .projects .p1-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .p1-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .p2-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .p2-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .p-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .p-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .pr-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .pr-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .pro-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .pro-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .proj-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .proj-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .proje-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .proje-flex .right-flex p {
+    font-size: 8px;
+  }
+  .projects .projec-flex .left-flex p {
+    font-size: 8px;
+  }
+  .projects .projec-flex .right-flex p {
+    font-size: 8px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+  .m-scroll {
+    width: 140%;
+    height: 5vh;
+    margin-top: 70%;
+  }
+  .m-scroll h1 {
+    font-size: 0.7em;
+  }
+  .m-scroll-1 {
+    width: 100%;
+    height: 16vh;
+  }
+  .m-scroll-1 h1 {
+    font-size: 42px;
+  }
+  .con img {
+    width: 40%;
+    margin: -16% 0%;
+  }
+  .con h2 {
+    font-size: 12px;
+  }
+  .con a {
+    font-size: 36px;
+  }
+  .con .social a {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Home.css.map */
